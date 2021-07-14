@@ -47,7 +47,8 @@
                                 <td><a href="#">View</a> </td>
                             </tr>
                             <tr th:each="recipe : ${recipes}">
-                                <td th:text="${recipe.id}">334</td>
+                                <!--/*@thymesVar id="recipe" type="guru.springframework.domain.Recipe"*/-->
+                                <td th:text=guru.springframework.domain.Recipe"${recipe.id}">334</td>
                                 <td th:text="${recipe.description}">Yum Scrummies 3</td>
                                 <td><a href="#" th:href="@{'/recipe/show/'+${recipe.id}}">View</a> </td>
                             </tr>
